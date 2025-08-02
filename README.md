@@ -1,28 +1,24 @@
 # Options Market Making Simulator
 
-A simple C++ simulation demonstrating how options market makers operate.
+Lightweight options market making simulator with dynamic pricing algorithms, inventory risk management, and real-time P&L tracking. Implements simplified option valuation with synthetic market data and automated order processing.
 
-## what it does
+## Features
 
-- simulates a market maker quoting bid/ask prices for options
-- tracks positions and p&l as stock price moves
-- shows risk management through inventory-based price adjustments
-- runs a 10-day simulation with random customer orders
+- Simulates a market maker quoting bid/ask prices for options
+- Tracks positions and p&l as stock price moves
+- Shows risk management through inventory-based price adjustments
+- Runs a 10-day simulation with random customer orders
+- 6 options: 3 calls (95, 100, 105 strike) and 3 puts (95, 100, 105 strike)
+- $2 bid-ask spread for profit
+- Position-based price adjustments
+- Random stock price movements
 
-## how to run
+## Execution
 
 ```bash
 g++ -o options_sim main.cpp
 ./options_sim
 ```
-
-## features
-
-- 6 options: 3 calls (95, 100, 105 strike) and 3 puts (95, 100, 105 strike)
-- $2 bid-ask spread for profit
-- position-based price adjustments
-- random stock price movements
-- portfolio value tracking
 
 ## output
 
